@@ -12,7 +12,7 @@ import java.util.Arrays;
 public class MyBot extends TelegramLongPollingBot {
 
     private static final String BOT_USERNAME = "@coder22bot";  // ur bot username
-    private static final String BOT_TOKEN = "6817651266:AAHDzZjfl3JyMhubKWcg-_hmTvqiCPw1JSY";       // Bot token
+    private static final String BOT_TOKEN = "6817651266:AAHDzZjfl3JyMh******JSY";       // Bot token, AM hiding my bot token for security ,,tmr ta diye update koro
 
     @Override
     public void onUpdateReceived(Update update) {

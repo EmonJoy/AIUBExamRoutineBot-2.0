@@ -9,17 +9,17 @@ public class Main {
     public static String Search(String srch) {
 
         try {
-            // ✅ PDF file path
+            //To PDF file path
             File file = new File("D:\\Java pppp\\MyRoutine\\src\\main\\java\\pdf.pdf");
             var document = PDDocument.load(file);
 
-            // ✅ Read all text from PDF
+            // all pdf read korar jnno
             PDFTextStripper stripper = new PDFTextStripper();
             String text = stripper.getText(document);
 
             document.close();
 
-            // ✅ Break text into lines
+            // break text....
             String[] lines = text.split("\n");
 
             String currentDate = "";

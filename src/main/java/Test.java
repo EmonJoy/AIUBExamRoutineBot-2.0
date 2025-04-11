@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class Test {
     public static void main(String[] args) {
-        try {
+/*        try {
             BufferedReader bf = new BufferedReader(new FileReader("Data.txt"));
             String line;
             while ((line = bf.readLine()) != null){
@@ -15,6 +15,10 @@ public class Test {
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
-        }
+        }*/
+
+
+        String path = "D:\\Java pppp\\MyRoutine\\src\\main\\java\\pdf.pdf";
+        System.out.println(path);
     }
 }

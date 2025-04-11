@@ -8,6 +8,7 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
 import java.io.*;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class MyBot extends TelegramLongPollingBot {
 
@@ -90,8 +91,7 @@ public class MyBot extends TelegramLongPollingBot {
     //  ************  always kisu msg likhe pathate hole ei ekhan theke pathabo **********
 
     //------------------------------------------------------------------------------------------
-
-/*    public void SendImportantMSg() {
+ /*  public void SendImportantMSg() {
         try {
             BufferedReader bf = new BufferedReader(new FileReader("Data.txt"));
             String line;
@@ -100,7 +100,7 @@ public class MyBot extends TelegramLongPollingBot {
 
                 SendMessage importantMsg = new SendMessage();
                 importantMsg.setChatId(chatID.toString());
-                importantMsg.setText("Server is currently off,,, Bot is under development...😊");
+                importantMsg.setText("Test msg..😊");
 
                 try {
                     execute(importantMsg);
@@ -128,19 +128,34 @@ public class MyBot extends TelegramLongPollingBot {
         return BOT_TOKEN;
     }
 
+
+
+    // main path passing er jnno --->
+/*    public static String FindPath(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter pdf's path: ");
+        String path = sc.next().trim();
+        return path;
+
+    }*/
+
+
     public static void main(String[] args) {
-        try {
-            TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
-            MyBot b = new MyBot();
 
-           // b.SendImportantMSg();
+            try {
+
+                TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
+                MyBot b = new MyBot();
+
+                // b.SendImportantMSg();
 
 
-            botsApi.registerBot(new MyBot());
-            System.out.println("Bot is running...🫡");
+                botsApi.registerBot(new MyBot());
+                System.out.println("Bot is running...🫡");
 
-        } catch (TelegramApiException e) {
-            e.printStackTrace();
-        }
+            } catch (TelegramApiException e) {
+                e.printStackTrace();
+            }
+
     }
 }

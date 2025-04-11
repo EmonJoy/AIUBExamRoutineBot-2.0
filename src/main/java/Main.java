@@ -6,11 +6,12 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
+   // public static String path = MyBot.FindPath();  ----->> Need to work from here...
     public static String Search(String srch) {
 
         try {
             //To PDF file path
-            File file = new File("D:\\Java pppp\\MyRoutine\\src\\main\\java\\pdf.pdf");
+            File file = new File("D:\\Java pppp\\MyRoutine\\src\\main\\java\\pdf.pdf"); // D:\Java pppp\MyRoutine\src\main\java\pdf.pdf
             var document = PDDocument.load(file);
 
             // all pdf read korar jnno

@@ -91,7 +91,7 @@ public class MyBot extends TelegramLongPollingBot {
     //  ************  always kisu msg likhe pathate hole ei ekhan theke pathabo **********
 
     //------------------------------------------------------------------------------------------
- /*  public void SendImportantMSg() {
+/*   public void SendImportantMSg() {
         try {
             BufferedReader bf = new BufferedReader(new FileReader("Data.txt"));
             String line;
@@ -100,7 +100,8 @@ public class MyBot extends TelegramLongPollingBot {
 
                 SendMessage importantMsg = new SendMessage();
                 importantMsg.setChatId(chatID.toString());
-                importantMsg.setText("Test msg..😊");
+                importantMsg.setText("Bot is now in Action!!!! grab your exam routine\nby searching" +
+                        "Subject name!!😊");
 
                 try {
                     execute(importantMsg);
@@ -131,13 +132,6 @@ public class MyBot extends TelegramLongPollingBot {
 
 
     // main path passing er jnno --->
-/*    public static String FindPath(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter pdf's path: ");
-        String path = sc.next().trim();
-        return path;
-
-    }*/
 
 
     public static void main(String[] args) {
@@ -147,7 +141,7 @@ public class MyBot extends TelegramLongPollingBot {
                 TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
                 MyBot b = new MyBot();
 
-                // b.SendImportantMSg();
+               //  b.SendImportantMSg();
 
 
                 botsApi.registerBot(new MyBot());

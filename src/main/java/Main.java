@@ -7,7 +7,7 @@ import java.io.InputStream;
 import java.util.Scanner;
 
 public class Main {
-   // public static String path = MyBot.FindPath();  ----->> Need to work from here...
+
     public static String Search(String srch) {
 
         try {
@@ -15,11 +15,15 @@ public class Main {
                 // use of input stream to access direct from resources ----->
             InputStream input = Main.class.getResourceAsStream("/pdf/pdf.pdf");
 
-            if (input ==null){
-                System.out.println("Not found");
-                return "🥴 pdf not found to read";
+            if (input == null) {
+                try {
+                    Thread.sleep(2000); // 2 second wait server response er jnno...
+                    input = Main.class.getResourceAsStream("/pdf/pdf.pdf");
+                    if (input == null) return "❌ PDF still not found after retry.";
+                } catch (InterruptedException e) {
+                    return "❌ Thread interrupted while retrying.";
+                }
             }
-
 
            // File file = new File("D:\\Java pppp\\MyRoutine\\src\\main\\java\\pdf.pdf"); // D:\Java pppp\MyRoutine\src\main\java\pdf.pdf
             var document = PDDocument.load(input);

@@ -13,11 +13,16 @@ public class Main {
         try {
             //To PDF file path
                 // use of input stream to access direct from resources ----->
-            InputStream input = Main.class.getResourceAsStream("/pdf/myRoutine.pdf");
+            InputStream input = Main.class.getResourceAsStream("/pdf/pdf.pdf");
+
+            if (input ==null){
+                System.out.println("Not found");
+                return "🥴 pdf not found to read";
+            }
 
 
-            File file = new File("D:\\Java pppp\\MyRoutine\\src\\main\\java\\pdf.pdf"); // D:\Java pppp\MyRoutine\src\main\java\pdf.pdf
-            var document = PDDocument.load(file);
+           // File file = new File("D:\\Java pppp\\MyRoutine\\src\\main\\java\\pdf.pdf"); // D:\Java pppp\MyRoutine\src\main\java\pdf.pdf
+            var document = PDDocument.load(input);
 
             // all pdf read korar jnno
             PDFTextStripper stripper = new PDFTextStripper();

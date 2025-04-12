@@ -3,6 +3,7 @@ import org.apache.pdfbox.text.PDFTextStripper;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Scanner;
 
 public class Main {
@@ -11,6 +12,10 @@ public class Main {
 
         try {
             //To PDF file path
+                // use of input stream to access direct from resources ----->
+            InputStream input = Main.class.getResourceAsStream("/pdf/myRoutine.pdf");
+
+
             File file = new File("D:\\Java pppp\\MyRoutine\\src\\main\\java\\pdf.pdf"); // D:\Java pppp\MyRoutine\src\main\java\pdf.pdf
             var document = PDDocument.load(file);
 

@@ -1,4 +1,7 @@
-FROM openjdk:17
+FROM eclipse-temurin:22-jdk
+
 WORKDIR /app
-COPY myExamRoutine.jar app.jar
-CMD ["java", "-jar", "app.jar"]
+
+COPY target/myExamRoutine.jar .
+
+CMD ["java", "-jar", "myExamRoutine.jar"]

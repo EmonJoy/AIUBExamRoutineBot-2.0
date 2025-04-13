@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class MyBot extends TelegramLongPollingBot {
 
     private static final String BOT_USERNAME = "@coder22bot";  // ur bot username
-    private static final String BOT_TOKEN = "6817651266:AAHDzZjfl3JyMhubKWcg-_hmTvqiCPw1JSY";       // Bot token
+    private static final String BOT_TOKEN = "6817651266:AAHDzZjfl3JyMhubKWcg-_******";       // Bot token
 
     @Override
     public void onUpdateReceived(Update update) {
@@ -152,7 +152,7 @@ public class MyBot extends TelegramLongPollingBot {
             }
         // tested
         // AFTER PULL FROM GIT CHECK ABOVE MSG ---->
-        //MSG:
+        //MSG: Bot token hide kora hoyeche..
 
     }
 }

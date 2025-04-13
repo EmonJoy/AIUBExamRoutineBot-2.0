@@ -1,6 +1,6 @@
 # AIUB Exam Routine Bot 2.0
 
-A simple Telegram bot built using **Java 22.0.1** that helps students of **AIUB (American International University-Bangladesh)** find their exam routine quickly by subject code or name.
+A simple Telegram bot built using **Java 22.0.1** that helps students of **AIUB (American International University-Bangladesh)** find their exam routine quickly by subject code or name. just search on telegram "@coder22bot" and use it 
 
 ## Features
 

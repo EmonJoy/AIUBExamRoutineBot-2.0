@@ -12,7 +12,7 @@ A simple Telegram bot built using **Java 22.0.1** that helps students of **AIUB 
 
 ## How It Works
 
-- Users send a subject name or code via Telegram
+- Users send a subject name  via Telegram
 - The bot checks `pdf file
 - ` and replies with the exam date and time
 - Example:
